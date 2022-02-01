@@ -1,8 +1,15 @@
+import ie.gmit.Calculator;
 import org.junit.jupiter.api.Test;
 
-public class CalculatorTest {
-    @Test
-    void justAnExample() {
-    }
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
+public class CalculatorTest {
+
+    Calculator calculator = new Calculator();
+
+    @Test
+    void testAdd() {
+        assertEquals(15, calculator.add(10,5));
+
+    }
 }
